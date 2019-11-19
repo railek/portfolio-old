@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "graphql.vscode-graphql",
+    "jpoissonnier.vscode-styled-components",
+    "mhutchie.git-graph",
+    "suming.react-proptypes-generate",
+    "usernamehw.errorlens",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "formulahendry.auto-rename-tag"
+  ]
+}
