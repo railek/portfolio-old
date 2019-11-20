@@ -1,0 +1,40 @@
+{
+  "name": "railek.com",
+  "version": "0.1.0",
+  "author": "Jean Brock <jean@railek.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop --open",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby-image": "^2.2.30",
+    "gatsby-plugin-sharp": "^2.2.30",
+    "gatsby-plugin-styled-components": "^3.1.18",
+    "gatsby-plugin-manifest": "^2.2.30",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-source-filesystem": "^2.2.30",
+    "gatsby-transformer-sharp": "^2.2.30",
+    "gatsby": "^2.17.6",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react": "^16.11.0",
+    "reset-css": "^5.0.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint": "^6.8.0",
+    "gatsby-plugin-eslint": "^2.0.8",
+    "prettier": "^1.19.1"
+  }
+}
