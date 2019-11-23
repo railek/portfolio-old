@@ -6,7 +6,7 @@ const Typography = css`
     line-height: 1.5;
     font-weight: 400;
     font-style: normal;
-    color: var(--gray-700);
+    color: var(--gray-200);
   }
 
   h1,
@@ -17,7 +17,7 @@ const Typography = css`
   h6 {
     line-height: 1.1;
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--gray-50);
     font-family: 'Bungee', sans-serif;
   }
 `;

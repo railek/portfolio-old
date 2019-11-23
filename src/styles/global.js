@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
+import Reset from './reset';
 import Color from './color';
 import Typography from './typography';
 
-import 'reset-css';
-
 const GlobalStyle = createGlobalStyle`
+  ${Reset}
   ${Color}
   ${Typography}
 `;
