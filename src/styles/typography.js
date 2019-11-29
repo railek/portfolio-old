@@ -17,7 +17,7 @@ const Typography = css`
   h6 {
     letter-spacing: 0.75px;
     line-height: 1.1;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--gray-50);
     font-family: 'Bungee', sans-serif;
   }

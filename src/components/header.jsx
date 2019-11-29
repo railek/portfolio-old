@@ -37,9 +37,8 @@ const StyledHeader = styled.header`
     display: flex;
     gap: 16px;
     align-items: center;
-    justify-content: center;
     border-top: 1px solid var(--gray-800);
-    padding: 16px 0;
+    padding: 24px;
 
     li {
       color: var(--gray-300);

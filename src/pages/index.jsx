@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import Hero from '../components/hero';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         path=""
       />
       <Layout>
+        <Hero />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas. Duis ultricies
