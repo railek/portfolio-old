@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import GlobalStyles from '../styles/global';
 import Header from './header';
 import Footer from './footer';
+import Navigation from './navigation';
 
 const Container = styled.div`
   background-color: var(--gray-900);
@@ -29,6 +30,7 @@ export default function Layout({ children }) {
       <Container>
         <Header />
         <div>
+          <Navigation />
           <main>{children}</main>
           <Footer />
         </div>
