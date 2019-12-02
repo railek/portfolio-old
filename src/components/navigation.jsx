@@ -44,9 +44,7 @@ const Navigation = () => {
       <ul>
         {links.map((link, index) => (
           <li key={index}>
-            <Link to={`/${link}`}>
-              <span>{link}</span>
-            </Link>
+            <Link to={`/${link.toLowerCase()}`}>{link}</Link>
           </li>
         ))}
       </ul>
