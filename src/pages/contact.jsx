@@ -5,6 +5,7 @@ import SectionTitle from '../components/section-title';
 import Wrapper from '../components/wrapper';
 import Seo from '../components/seo';
 import useSiteMetadata from '../hooks/useSiteMetadata';
+import Button from '../components/button';
 
 const StyledForm = styled.form`
   display: flex;
@@ -39,19 +40,6 @@ const StyledForm = styled.form`
       flex-direction: row;
       gap: 20px;
     }
-  }
-`;
-
-const StyledButton = styled.button`
-  background-color: var(--gray-600);
-  padding: 10px 16px;
-  transition: background-color 0.2s ease-in-out;
-  color: var(--gray-100);
-  font-weight: 700;
-  text-transform: uppercase;
-
-  &:hover {
-    background: var(--gray-700);
   }
 `;
 
@@ -105,7 +93,7 @@ export default function Contact() {
               placeholder="Describe what you're looking for - be as descriptive as possible"
               rows="8"
             />
-            <StyledButton type="submit">Let&apos;s Chat</StyledButton>
+            <Button type="submit" label="Let's Chat" />
           </StyledForm>
         </Wrapper>
       </Layout>
