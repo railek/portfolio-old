@@ -4,6 +4,7 @@ import Seo from '../components/seo';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import CallToAction from '../components/call-to-action';
 import Introduction from '../components/introduction';
+import Stack from '../components/stack';
 
 export default function Contact() {
   const {
@@ -27,6 +28,7 @@ export default function Contact() {
       />
       <Layout>
         <Introduction />
+        <Stack />
         <CallToAction />
       </Layout>
     </>
