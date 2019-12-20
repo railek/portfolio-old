@@ -14,13 +14,8 @@ const StyledWrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    padding: 96px;
-  }
-
-  @media (min-width: 1280px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    padding: 128px;
+    padding: 96px;
   }
 `;
 
@@ -57,10 +52,6 @@ const StyledBottom = styled.div`
 
   @media (min-width: 1024px) {
     padding: 48px 96px;
-  }
-
-  @media (min-width: 1280px) {
-    padding: 48px 128px;
   }
 `;
 

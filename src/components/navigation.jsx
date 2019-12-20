@@ -17,10 +17,6 @@ const StyledNavigation = styled.nav`
     padding: 48px 96px;
   }
 
-  @media (min-width: 1280px) {
-    padding: 48px 128px;
-  }
-
   ul {
     display: flex;
     gap: 48px;

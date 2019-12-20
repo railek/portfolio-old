@@ -36,7 +36,7 @@ const StyledItem = styled.li`
     margin-bottom: 0px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
