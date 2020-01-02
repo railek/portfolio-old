@@ -5,6 +5,11 @@ import favicon from '../images/favicon.png';
 
 const StyledImage = styled.img`
   width: 32px;
+  transition: transform 0.2s ease-in-out;
+
+  :hover {
+    transform: rotate(360deg);
+  }
 `;
 
 const Logo = () => (
