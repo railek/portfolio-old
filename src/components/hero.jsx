@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import Wrapper from './wrapper';
 
 const StyledHero = styled.div`
-  border-bottom: 1px solid var(--gray-800);
-
   h1 {
     font-size: 24px;
 
