@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
   ${Color}
   ${Typography}
 
+  ::selection {
+    background: var(--gray-700);
+  }
+
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--gray-700);
