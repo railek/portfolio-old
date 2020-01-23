@@ -6,7 +6,7 @@ import CallToAction from '../components/call-to-action';
 import Introduction from '../components/introduction';
 import Stack from '../components/stack';
 
-export default function Contact() {
+export default function About() {
   const {
     site: {
       siteMetadata: { title, description, keywords, url, ogImage, favicon, lang },

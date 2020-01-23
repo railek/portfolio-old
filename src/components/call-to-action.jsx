@@ -27,7 +27,9 @@ export default function CallToAction() {
       <Wrapper>
         <h2>Get in touch 👋</h2>
         <p>Feel free to email me about anything. Do you have some feedback or suggestions?</p>
-        <Button label="Say Hello" path="/contact" />
+        <a href="mailto:jean@railek.com">
+          <Button label="Say Hello" />
+        </a>
       </Wrapper>
     </StyledSection>
   );

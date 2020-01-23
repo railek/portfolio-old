@@ -56,7 +56,7 @@ const StyledBottom = styled.div`
 `;
 
 const Footer = () => {
-  const links = ['About', 'Projects', 'Contact'];
+  const links = ['About', 'Projects'];
 
   return (
     <>

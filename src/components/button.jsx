@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -24,13 +23,9 @@ const StyledButton = styled.button`
   }
 `;
 
-export default function Button({ type = 'button', label, path = '/' }) {
+export default function Button({ type = 'button', label }) {
   if (type === 'submit') {
     return <StyledButton type={type}>{label}</StyledButton>;
   }
-  return (
-    <StyledButton type={type}>
-      <Link to={path}>{label}</Link>
-    </StyledButton>
-  );
+  return <StyledButton type={type}>{label}</StyledButton>;
 }

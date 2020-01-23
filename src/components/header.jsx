@@ -52,7 +52,7 @@ const StyledHeader = styled.header`
 
 const Header = () => {
   const node = useRef();
-  const links = ['About', 'Projects', 'Contact'];
+  const links = ['About', 'Projects'];
 
   return (
     <StyledHeader>

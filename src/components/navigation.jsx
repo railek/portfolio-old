@@ -32,7 +32,7 @@ const StyledNavigation = styled.nav`
 `;
 
 const Navigation = () => {
-  const links = ['About', 'Projects', 'Contact'];
+  const links = ['About', 'Projects'];
 
   return (
     <StyledNavigation>
