@@ -1,11 +1,20 @@
 import React from 'react';
 import { IoLogoGithub, IoMdOpen } from 'react-icons/io';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import useProjects from '../hooks/useProjects';
 import Layout from '../components/layout';
 import SectionTitle from '../components/section-title';
 import Wrapper from '../components/wrapper';
 import CallToAction from '../components/call-to-action';
+
+export const Bounce = {
+  transition: {
+    duration: 0.1,
+    ease: 'easeOut',
+  },
+  translateY: -4,
+};
 
 const StyledCard = styled.article`
   display: flex;
@@ -62,7 +71,7 @@ const StyledGrid = styled.div`
 function Card({ title, url, tags, excerpt }) {
   return (
     <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-      <StyledCard>
+      <StyledCard as={motion.div} whileHover={Bounce}>
         <header>
           <div>
             <IoLogoGithub />
