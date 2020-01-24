@@ -1,24 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import Wrapper from './wrapper';
-
-const StyledHero = styled.div`
-  h1 {
-    font-size: 24px;
-
-    @media (min-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 48px;
-    }
-  }
-`;
 
 export default function Hero() {
   return (
-    <StyledHero>
+    <section>
       <Wrapper>
         <h1>
           Multi-disciplinary frontend
@@ -30,6 +15,6 @@ export default function Hero() {
           experiences.
         </h1>
       </Wrapper>
-    </StyledHero>
+    </section>
   );
 }

@@ -42,6 +42,12 @@ const StyledItem = styled.li`
     justify-content: flex-start;
   }
 
+  strong {
+    font-weight: 500;
+    color: var(--gray-50);
+    font-family: 'Bungee', sans-serif;
+  }
+
   a {
     display: flex;
     gap: 8px;
@@ -61,7 +67,6 @@ const StyledGrid = styled.div`
 
 const StyledHeading = styled.h3`
   margin-bottom: 20px;
-  font-size: 20px;
 `;
 
 const Item = ({ name, description, icon, link }) => {
@@ -69,7 +74,7 @@ const Item = ({ name, description, icon, link }) => {
     <StyledItem>
       <a href={link} rel="noopener nofollow noreferrer">
         {icon}
-        <h4>{name}</h4>
+        <strong>{name}</strong>
       </a>
       <span>{description}</span>
     </StyledItem>

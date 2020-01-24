@@ -28,10 +28,9 @@ const StyledCard = styled.article`
     min-height: 256px;
   }
 
-  h3 {
+  h5 {
     color: var(--gray-50);
-    margin-bottom: 12px;
-    font-size: 20px;
+    margin-bottom: 8px;
   }
 
   header > div {
@@ -77,7 +76,7 @@ function Card({ title, url, tags, excerpt }) {
             <IoLogoGithub />
             <IoMdOpen />
           </div>
-          <h3>{title}</h3>
+          <h5>{title}</h5>
           <p>{excerpt}</p>
         </header>
         <footer>
