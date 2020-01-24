@@ -10,11 +10,11 @@ const StyledNavigation = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 48px;
+    padding: 32px;
   }
 
   @media (min-width: 1024px) {
-    padding: 48px 96px;
+    padding: 32px 96px;
   }
 
   ul {
