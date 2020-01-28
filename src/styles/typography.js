@@ -21,6 +21,14 @@ const Typography = css`
     font-weight: 400;
     font-style: normal;
     color: var(--gray-200);
+    font-size: var(--text-16);
+  }
+
+  p {
+    font-size: var(--text-14);
+    @media (min-width: 768px) {
+      font-size: var(--text-16);
+    }
   }
 
   h1,

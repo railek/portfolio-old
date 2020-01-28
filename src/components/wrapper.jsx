@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
   max-width: 100%;
-  padding: 24px;
+  padding: var(--space-24);
 
   @media (min-width: 768px) {
-    padding: 48px;
+    padding: var(--space-48);
   }
 
   @media (min-width: 1024px) {
-    padding: 96px;
+    padding: var(--space-96);
   }
 `;
 

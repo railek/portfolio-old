@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import favicon from '../images/favicon.png';
 
 const StyledImage = styled.img`
-  width: 32px;
+  width: var(--space-32);
   transition: transform 0.2s ease-in-out;
 
   :hover {

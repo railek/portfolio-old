@@ -11,7 +11,7 @@ const StyledContainer = styled.div`
   header {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--space-12);
   }
 `;
 

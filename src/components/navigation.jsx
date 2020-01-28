@@ -10,16 +10,16 @@ const StyledNavigation = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px;
+    padding: var(--space-32);
   }
 
   @media (min-width: 1024px) {
-    padding: 32px 96px;
+    padding: var(--space-32) var(--space-96);
   }
 
   ul {
     display: flex;
-    gap: 48px;
+    gap: var(--space-48);
 
     li {
       color: var(--gray-300);

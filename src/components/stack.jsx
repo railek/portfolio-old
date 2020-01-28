@@ -25,15 +25,15 @@ import SectionTitle from './section-title';
 
 const StyledItem = styled.li`
   display: flex;
-  gap: 8px;
+  gap: var(--space-8);
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   color: var(--gray-300);
-  margin-bottom: 16px;
+  margin-bottom: var(--space-16);
 
   :last-of-type {
-    margin-bottom: 0px;
+    margin-bottom: var(--space-0);
   }
 
   @media (min-width: 1024px) {
@@ -50,7 +50,7 @@ const StyledItem = styled.li`
 
   a {
     display: flex;
-    gap: 8px;
+    gap: var(--space-8);
     align-items: center;
     justify-content: center;
   }
@@ -58,7 +58,7 @@ const StyledItem = styled.li`
 
 const StyledGrid = styled.div`
   display: grid;
-  gap: 48px;
+  gap: var(--space-48);
 
   @media (min-width: 1280px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -66,7 +66,7 @@ const StyledGrid = styled.div`
 `;
 
 const StyledHeading = styled.h3`
-  margin-bottom: 20px;
+  margin-bottom: var(--space-20);
 `;
 
 const Item = ({ name, description, icon, link }) => {

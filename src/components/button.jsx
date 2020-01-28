@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  margin-top: 32px;
+  margin-top: var(--space-32);
   border: 2px solid var(--gray-100);
   background: transparent;
-  padding: 12px 24px;
+  padding: var(--space-12) var(--space-24);
   transition: all 0.2s ease-in-out;
   color: var(--gray-100);
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--text-14);
   text-transform: uppercase;
 
   :hover {
@@ -19,7 +19,7 @@ const StyledButton = styled.button`
 
   @media (min-width: 768px) {
     width: auto;
-    margin-top: 48px;
+    margin-top: var(--space-48);
   }
 `;
 

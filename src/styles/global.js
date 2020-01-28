@@ -3,11 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 import Reset from './reset';
 import Color from './color';
 import Typography from './typography';
+import Spacing from './spacing';
 
 const GlobalStyle = createGlobalStyle`
   ${Reset}
   ${Color}
   ${Typography}
+  ${Spacing}
 
   ::selection {
     background: var(--gray-700);
@@ -19,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar {
-    width: 8px;
+    width: var(--space-8);
   }
 
   *::-webkit-scrollbar-track {

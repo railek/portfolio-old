@@ -4,7 +4,7 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const StyledSocial = styled.div`
   display: flex;
-  gap: 16px;
+  gap: var(--space-16);
   align-items: center;
   justify-content: center;
 
@@ -13,7 +13,7 @@ const StyledSocial = styled.div`
   }
 
   svg {
-    font-size: 32px;
+    font-size: var(--text-32);
     color: var(--gray-400);
 
     :hover {

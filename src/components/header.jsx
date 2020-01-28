@@ -24,21 +24,21 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 24px;
+    padding: var(--space-20) var(--space-24);
     height: 100%;
 
     @media (min-width: 768px) {
       flex-direction: column;
-      padding: 32px;
+      padding: var(--space-32);
     }
   }
 
   ul {
     display: flex;
-    gap: 16px;
+    gap: var(--space-16);
     align-items: center;
     border-top: 1px solid var(--gray-800);
-    padding: 16px 24px;
+    padding: var(--space-16) var(--space-24);
 
     li {
       color: var(--gray-300);

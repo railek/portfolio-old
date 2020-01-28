@@ -7,9 +7,9 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   border: 1px solid var(--gray-700);
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
+  width: var(--space-48);
+  height: var(--space-48);
+  font-size: var(--text-24);
   color: var(--white);
 
   &:hover {
