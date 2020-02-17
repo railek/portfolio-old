@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import {
   SiJavascript,
   SiCsharp,
@@ -79,6 +80,13 @@ const Item = ({ name, description, icon, link }) => {
       <span>{description}</span>
     </StyledItem>
   );
+};
+
+Item.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.shape({}).isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default function Stack() {

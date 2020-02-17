@@ -13,7 +13,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'no-underscore-dangle': 'off',
-    'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
   },
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
 
 export default function SEO({
   title,
@@ -39,3 +40,20 @@ export default function SEO({
     </Helmet>
   );
 }
+
+SEO.defaultProps = {
+  lang: 'en',
+  type: 'website',
+};
+
+SEO.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  keywords: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  url: PropTypes.string.isRequired,
+  ogImage: PropTypes.string.isRequired,
+  lang: PropTypes.string,
+  type: PropTypes.string,
+  page: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+};

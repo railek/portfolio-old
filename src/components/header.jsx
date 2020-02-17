@@ -61,8 +61,8 @@ const Header = () => {
         <Socials />
       </div>
       <ul>
-        {links.map(link => (
-          <li key={link}>
+        {links.map((link, index) => (
+          <li key={index}>
             <Link to={`/${link.toLowerCase()}`}>{link}</Link>
           </li>
         ))}

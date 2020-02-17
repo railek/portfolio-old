@@ -2,6 +2,7 @@ import React from 'react';
 import { IoLogoGithub, IoMdOpen } from 'react-icons/io';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 import useProjects from '../hooks/useProjects';
 import Layout from '../components/layout';
 import SectionTitle from '../components/section-title';
@@ -80,14 +81,21 @@ function Card({ title, url, tags, excerpt }) {
           <p>{excerpt}</p>
         </header>
         <footer>
-          {tags.map(tag => (
-            <span key={tag}>{tag}</span>
+          {tags.map((tag, index) => (
+            <span key={index}>{tag}</span>
           ))}
         </footer>
       </StyledCard>
     </a>
   );
 }
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+};
 
 const ProjectPage = () => {
   const projects = useProjects();
@@ -97,8 +105,10 @@ const ProjectPage = () => {
       <Wrapper>
         <SectionTitle title="Noteworthy Projects I've worked on" />
         <StyledGrid>
-          {projects.map(({ title, url, tags, excerpt }) => (
-            <Card title={title} url={url} tags={tags} excerpt={excerpt} />
+          {projects.map(({ title, url, tags, excerpt }, index) => (
+            <figure key={index}>
+              <Card title={title} url={url} tags={tags} excerpt={excerpt} />
+            </figure>
           ))}
         </StyledGrid>
       </Wrapper>

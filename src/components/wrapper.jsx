@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledWrapper = styled.div`
   max-width: 100%;
@@ -17,3 +18,7 @@ const StyledWrapper = styled.div`
 export default function Wrapper({ children }) {
   return <StyledWrapper>{children}</StyledWrapper>;
 }
+
+Wrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledHeader = styled.h2`
   margin-bottom: var(--space-48);
@@ -27,3 +28,7 @@ const StyledHeader = styled.h2`
 export default function SectionTitle({ title }) {
   return <StyledHeader>{title}</StyledHeader>;
 }
+
+SectionTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+};
