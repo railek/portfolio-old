@@ -7,10 +7,10 @@ module.exports = {
     title: 'Railek',
     description: 'Multi-disciplinary frontend developer based in South Africa.',
     keywords: ['React', 'Gatsby', 'JavaScript'],
-    url: isProd ? 'https://www.railek.com' : 'http://localhost:8000',
     ogImage: 'images/open-graph.png',
     author: '@rail3k',
     lang: 'en',
+    siteUrl: isProd ? 'https://www.railek.com' : 'http://localhost:8000',
   },
   plugins: [
     'gatsby-plugin-eslint',
@@ -53,5 +53,6 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
   ],
 };

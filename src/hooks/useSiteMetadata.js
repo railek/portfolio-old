@@ -9,7 +9,7 @@ export default function useSiteMetadata() {
             title
             description
             keywords
-            url
+            siteUrl
             ogImage
             lang
           }

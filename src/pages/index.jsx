@@ -8,7 +8,7 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 export default function Home() {
   const {
     site: {
-      siteMetadata: { title, description, keywords, url, ogImage, favicon, lang },
+      siteMetadata: { title, description, keywords, siteUrl, ogImage, favicon, lang },
     },
   } = useSiteMetadata();
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         title={title}
         description={description}
         keywords={keywords}
-        url={url}
+        url={siteUrl}
         ogImage={ogImage}
         favicon={favicon}
         lang={lang}
