@@ -4,7 +4,7 @@ const fs = require('fs');
 module.exports = {
   root: true,
   extends: ['eslint:recommended', 'plugin:react/recommended', 'airbnb', 'airbnb/hooks', 'prettier'],
-  plugins: ['prettier', 'import'],
+  plugins: ['prettier', 'simple-import-sort', , 'import'],
   env: {
     browser: true,
     es6: true,
@@ -14,5 +14,54 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-underscore-dangle': 'off',
     'react/no-array-index-key': 'off',
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
   },
+  overrides: [
+    {
+      files: [
+        "*.js",
+        "*.jsx",
+        "*.ts",
+        "*.tsx"
+      ],
+      rules: {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            groups: [
+              // Packages `react` related packages come first.
+              [
+                "^react",
+                "^@?\\w"
+              ],
+              // Internal packages.
+              [
+                "^(@|components)(/.*|$)"
+              ],
+              // Side effect imports.
+              [
+                "^\\u0000"
+              ],
+              // Parent imports. Put `..` last.
+              [
+                "^\\.\\.(?!/?$)",
+                "^\\.\\./?$"
+              ],
+              // Other relative imports. Put same-folder imports and `.` last.
+              [
+                "^\\./(?=.*/)(?!/?$)",
+                "^\\.(?!/?$)",
+                "^\\./?$"
+              ],
+              // Style imports.
+              [
+                "^.+\\.?(css)$"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
 };
