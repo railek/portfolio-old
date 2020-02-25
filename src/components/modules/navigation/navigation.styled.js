@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
+/* eslint-disable import/prefer-default-export */
+
 import styled from 'styled-components';
 
-const StyledNavigation = styled.nav`
+export const StyledNavigation = styled.nav`
   display: none;
 
   @media (min-width: 768px) {
@@ -30,22 +30,3 @@ const StyledNavigation = styled.nav`
     }
   }
 `;
-
-const Navigation = () => {
-  const links = ['About', 'Projects'];
-
-  return (
-    <StyledNavigation>
-      <h6>Jean Alexander Brock</h6>
-      <ul>
-        {links.map((link, index) => (
-          <li key={index}>
-            <Link to={`/${link.toLowerCase()}`}>{link}</Link>
-          </li>
-        ))}
-      </ul>
-    </StyledNavigation>
-  );
-};
-
-export default Navigation;

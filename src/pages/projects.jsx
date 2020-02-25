@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import CallToAction from '@/components/call-to-action';
+import SectionTitle from '@/components/elements/section-title';
+import Wrapper from '@/components/elements/wrapper';
 import Layout from '@/components/layout';
-import SectionTitle from '@/components/section-title';
-import Wrapper from '@/components/wrapper';
+import CallToAction from '@/components/modules/call-to-action';
 import useProjects from '@/hooks/useProjects';
 
 export const Bounce = {

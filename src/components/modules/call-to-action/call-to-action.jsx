@@ -1,20 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import Button from '@/components/button';
-import Wrapper from '@/components/wrapper';
+import Button from '@/components/elements/button';
+import Wrapper from '@/components/elements/wrapper';
 
-const StyledSection = styled.section`
-  border-top: 1px solid var(--gray-800);
-`;
-
-const StyledContainer = styled.div`
-  header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-12);
-  }
-`;
+import { StyledContainer, StyledSection } from './call-to-action.styled';
 
 export default function CallToAction() {
   return (

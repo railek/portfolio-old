@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable import/prefer-default-export */
+
 import styled from 'styled-components';
 
-const StyledHeader = styled.h2`
+export const StyledHeader = styled.h2`
   margin-bottom: var(--space-48);
   position: relative;
   color: var(--white);
@@ -24,11 +24,3 @@ const StyledHeader = styled.h2`
     left: 0;
   }
 `;
-
-export default function SectionTitle({ title }) {
-  return <StyledHeader>{title}</StyledHeader>;
-}
-
-SectionTitle.propTypes = {
-  title: PropTypes.string.isRequired,
-};

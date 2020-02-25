@@ -1,27 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
 
-import BackgroundImage from '@/components/background-image';
-import SectionTitle from '@/components/section-title';
-import Wrapper from '@/components/wrapper';
+import BackgroundImage from '@/components/elements/background-image';
+import SectionTitle from '@/components/elements/section-title';
+import Wrapper from '@/components/elements/wrapper';
 
-const StyledIntroduction = styled.div`
-  position: relative;
-`;
-
-const StyledContent = styled.div`
-  position: relative;
-  p {
-    max-width: 64ch;
-    margin-bottom: var(--space-16);
-    color: var(--gray-100);
-
-    &:last-of-type {
-      margin-bottom: var(--space-0);
-    }
-  }
-`;
+import { StyledContent, StyledIntroduction } from './introduction.styled';
 
 export default function Introduction() {
   const data = useStaticQuery(graphql`

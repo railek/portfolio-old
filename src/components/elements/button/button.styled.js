@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable import/prefer-default-export */
+
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   margin-top: var(--space-32);
   border: 2px solid var(--gray-100);
   background: transparent;
@@ -23,19 +23,3 @@ const StyledButton = styled.button`
     margin-top: var(--space-48);
   }
 `;
-
-export default function Button({ type = 'button', label }) {
-  if (type === 'submit') {
-    return <StyledButton type={type}>{label}</StyledButton>;
-  }
-  return <StyledButton type={type}>{label}</StyledButton>;
-}
-
-Button.defaultProps = {
-  type: 'button',
-};
-
-Button.propTypes = {
-  type: PropTypes.string,
-  label: PropTypes.string.isRequired,
-};

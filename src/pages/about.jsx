@@ -1,10 +1,10 @@
 import React from 'react';
 
-import CallToAction from '@/components/call-to-action';
-import Introduction from '@/components/introduction';
+import Seo from '@/components/elements/seo';
 import Layout from '@/components/layout';
-import Seo from '@/components/seo';
-import Stack from '@/components/stack';
+import CallToAction from '@/components/modules/call-to-action';
+import Introduction from '@/components/modules/introduction';
+import Stack from '@/components/modules/stack';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 
 export default function About() {

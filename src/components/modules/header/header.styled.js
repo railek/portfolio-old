@@ -1,11 +1,8 @@
-import React, { useRef } from 'react';
-import { Link } from 'gatsby';
+/* eslint-disable import/prefer-default-export */
+
 import styled from 'styled-components';
 
-import Logo from '@/components/logo';
-import Socials from '@/components/socials';
-
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   top: 0;
   z-index: 10;
   border-bottom: 1px solid var(--gray-800);
@@ -50,26 +47,3 @@ const StyledHeader = styled.header`
     }
   }
 `;
-
-const Header = () => {
-  const node = useRef();
-  const links = ['About', 'Projects'];
-
-  return (
-    <StyledHeader>
-      <div ref={node}>
-        <Logo />
-        <Socials />
-      </div>
-      <ul>
-        {links.map((link, index) => (
-          <li key={index}>
-            <Link to={`/${link.toLowerCase()}`}>{link}</Link>
-          </li>
-        ))}
-      </ul>
-    </StyledHeader>
-  );
-};
-
-export default Header;

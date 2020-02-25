@@ -1,9 +1,9 @@
 import React from 'react';
 
-import CallToAction from '@/components/call-to-action';
-import Hero from '@/components/hero';
+import Seo from '@/components/elements/seo';
 import Layout from '@/components/layout';
-import Seo from '@/components/seo';
+import CallToAction from '@/components/modules/call-to-action';
+import Hero from '@/components/modules/hero';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 
 export default function Home() {
