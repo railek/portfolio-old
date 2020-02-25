@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import favicon from '../images/favicon.png';
+
+import favicon from '@/images/favicon.png';
 
 const StyledImage = styled.img`
   width: var(--space-32);

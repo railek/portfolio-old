@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const StyledImage = styled(Img)`
   position: absolute !important;

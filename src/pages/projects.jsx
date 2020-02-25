@@ -1,13 +1,14 @@
 import React from 'react';
 import { IoLogoGithub, IoMdOpen } from 'react-icons/io';
-import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
-import useProjects from '../hooks/useProjects';
-import Layout from '../components/layout';
-import SectionTitle from '../components/section-title';
-import Wrapper from '../components/wrapper';
-import CallToAction from '../components/call-to-action';
+import styled from 'styled-components';
+
+import CallToAction from '@/components/call-to-action';
+import Layout from '@/components/layout';
+import SectionTitle from '@/components/section-title';
+import Wrapper from '@/components/wrapper';
+import useProjects from '@/hooks/useProjects';
 
 export const Bounce = {
   transition: {

@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
-import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Logo from './logo';
-import Socials from './socials';
+import styled from 'styled-components';
+
+import Logo from '@/components/logo';
+import Socials from '@/components/socials';
 
 const StyledHeader = styled.header`
   top: 0;

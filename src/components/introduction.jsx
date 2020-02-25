@@ -1,9 +1,10 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
-import BackgroundImage from './background-image';
-import Wrapper from './wrapper';
-import SectionTitle from './section-title';
+
+import BackgroundImage from '@/components/background-image';
+import SectionTitle from '@/components/section-title';
+import Wrapper from '@/components/wrapper';
 
 const StyledIntroduction = styled.div`
   position: relative;

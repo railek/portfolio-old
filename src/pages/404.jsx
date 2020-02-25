@@ -1,7 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
-import useSiteMetadata from '../hooks/useSiteMetadata';
+
+import Layout from '@/components/layout';
+import Seo from '@/components/seo';
+import useSiteMetadata from '@/hooks/useSiteMetadata';
 
 export default function NotFound() {
   const {

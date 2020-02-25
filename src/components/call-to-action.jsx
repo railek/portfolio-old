@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Wrapper from './wrapper';
-import Button from './button';
+
+import Button from '@/components/button';
+import Wrapper from '@/components/wrapper';
 
 const StyledSection = styled.section`
   border-top: 1px solid var(--gray-800);

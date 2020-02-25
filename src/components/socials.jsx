@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
+import styled from 'styled-components';
 
 const StyledSocial = styled.div`
   display: flex;

@@ -14,54 +14,43 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-underscore-dangle': 'off',
     'react/no-array-index-key': 'off',
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   overrides: [
     {
-      files: [
-        "*.js",
-        "*.jsx",
-        "*.ts",
-        "*.tsx"
-      ],
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       rules: {
-        "simple-import-sort/imports": [
-          "error",
+        'simple-import-sort/imports': [
+          'error',
           {
             groups: [
               // Packages `react` related packages come first.
-              [
-                "^react",
-                "^@?\\w"
-              ],
+              ['^react', '^@?\\w'],
               // Internal packages.
-              [
-                "^(@|components)(/.*|$)"
-              ],
+              ['^(@|components)(/.*|$)'],
               // Side effect imports.
-              [
-                "^\\u0000"
-              ],
+              ['^\\u0000'],
               // Parent imports. Put `..` last.
-              [
-                "^\\.\\.(?!/?$)",
-                "^\\.\\./?$"
-              ],
+              ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
               // Other relative imports. Put same-folder imports and `.` last.
-              [
-                "^\\./(?=.*/)(?!/?$)",
-                "^\\.(?!/?$)",
-                "^\\./?$"
-              ],
+              ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
               // Style imports.
-              [
-                "^.+\\.?(css)$"
-              ]
-            ]
-          }
-        ]
-      }
-    }
+              ['^.+\\.?(css)$'],
+            ],
+          },
+        ],
+      },
+    },
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src/'],
+        ],
+        extensions: ['.js', '.jsx'],
+      },
+    },
+  },
 };

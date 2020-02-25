@@ -1,9 +1,10 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
-import Hero from '../components/hero';
-import CallToAction from '../components/call-to-action';
-import useSiteMetadata from '../hooks/useSiteMetadata';
+
+import CallToAction from '@/components/call-to-action';
+import Hero from '@/components/hero';
+import Layout from '@/components/layout';
+import Seo from '@/components/seo';
+import useSiteMetadata from '@/hooks/useSiteMetadata';
 
 export default function Home() {
   const {

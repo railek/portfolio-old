@@ -1,28 +1,29 @@
 import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import {
-  SiJavascript,
-  SiCsharp,
-  SiFigma,
-  SiUnity,
-  SiVisualstudiocode,
-  SiVisualstudio,
-  SiAdobephotoshop,
   SiAdobeillustrator,
+  SiAdobephotoshop,
   SiAdobexd,
-  SiReact,
-  SiBootstrap,
   SiBlender,
-  SiSass,
-  SiHtml5,
+  SiBootstrap,
+  SiCsharp,
   SiCss3,
-  SiWebpack,
-  SiJquery,
+  SiFigma,
   SiGulp,
+  SiHtml5,
+  SiJavascript,
+  SiJquery,
+  SiReact,
+  SiSass,
+  SiUnity,
+  SiVisualstudio,
+  SiVisualstudiocode,
+  SiWebpack,
 } from 'react-icons/si';
-import Wrapper from './wrapper';
-import SectionTitle from './section-title';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+import SectionTitle from '@/components/section-title';
+import Wrapper from '@/components/wrapper';
 
 const StyledItem = styled.li`
   display: flex;

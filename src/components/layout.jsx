@@ -1,10 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import GlobalStyles from '../styles/global';
-import Header from './header';
-import Footer from './footer';
-import Navigation from './navigation';
+import styled from 'styled-components';
+
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import Navigation from '@/components/navigation';
+import GlobalStyles from '@/styles/global';
 
 const StyledContainer = styled.div`
   background-color: var(--gray-900);
