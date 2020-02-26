@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoIosArrowRoundUp } from 'react-icons/io';
+import { IoIosArrowUp } from 'react-icons/io';
 
 import { StyledButton } from './scroll-top.styled';
 
@@ -10,7 +10,7 @@ const ScrollTop = () => {
 
   return (
     <StyledButton onClick={handleClick} type="button">
-      <IoIosArrowRoundUp />
+      <IoIosArrowUp />
     </StyledButton>
   );
 };

@@ -19,13 +19,13 @@ export const StyledNavigation = styled.nav`
 
   ul {
     display: flex;
-    gap: var(--space-48);
+    gap: var(--space-40);
 
-    li {
-      color: var(--gray-300);
-
+    li a {
+      color: var(--gray-400);
+      font-weight: 500;
       &:hover {
-        color: var(--white);
+        color: var(--gray-100);
       }
     }
   }

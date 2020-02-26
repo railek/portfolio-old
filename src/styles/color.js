@@ -5,6 +5,17 @@ const Color = css`
     --black: #000;
     --white: #fff;
 
+    --primary-50: #ffff75;
+    --primary-100: #fffd6b;
+    --primary-200: #fff361;
+    --primary-300: #ffe957;
+    --primary-400: #ffdf4d;
+    --primary-500: #fdd543;
+    --primary-600: #f3cb39;
+    --primary-700: #e9c12f;
+    --primary-800: #dfb725;
+    --primary-900: #d5ad1b;
+
     --gray-50: #fafafa;
     --gray-100: #f4f4f5;
     --gray-200: #e4e4e7;

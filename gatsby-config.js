@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee', 'Open Sans'],
+          families: ['Bungee', 'Open Sans:400,500,700,900'],
         },
       },
     },

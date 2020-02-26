@@ -4,17 +4,16 @@ import styled from 'styled-components';
 
 export const StyledButton = styled.button`
   margin-top: var(--space-32);
-  border: 2px solid var(--gray-100);
-  background: transparent;
+  background-color: var(--primary-500);
   padding: var(--space-12) var(--space-24);
   transition: all 0.2s ease-in-out;
-  color: var(--gray-100);
-  font-weight: 700;
+  color: var(--gray-900);
+  font-weight: 900;
   font-size: var(--text-14);
   text-transform: uppercase;
 
   :hover {
-    background-color: var(--gray-100);
+    background-color: var(--primary-800);
     color: var(--gray-900);
   }
 
