@@ -6,16 +6,11 @@ import Header from '@/components/modules/header';
 import Navigation from '@/components/modules/navigation';
 import GlobalStyles from '@/styles/global';
 
-import { StyledContainer, StyledSVG } from './layout.styled';
+import { StyledContainer } from './layout.styled';
 
 export default function Layout({ children }) {
   return (
     <>
-      <StyledSVG>
-        <filter id="blobs">
-          <feTurbulence type="fractalNoise" baseFrequency="0.001" />
-        </filter>
-      </StyledSVG>
       <GlobalStyles />
       <StyledContainer>
         <Header />

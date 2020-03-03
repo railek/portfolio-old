@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
-  background-color: var(--gray-900);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,7 +17,7 @@ export const StyledContainer = styled.div`
   &::before,
   &::after {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -27,19 +26,54 @@ export const StyledContainer = styled.div`
   }
 
   &::before {
-    filter: url(#blobs);
+    background-image: linear-gradient(
+        45deg,
+        transparent 24%,
+        rgba(255, 255, 255, 0.01) 25%,
+        rgba(255, 255, 255, 0.01) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(255, 255, 255, 0.01) 75%,
+        rgba(255, 255, 255, 0.01) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 24%,
+        rgba(255, 255, 255, 0.01) 25%,
+        rgba(255, 255, 255, 0.01) 26%,
+        transparent 27%,
+        transparent 74%,
+        rgba(255, 255, 255, 0.01) 75%,
+        rgba(255, 255, 255, 0.01) 76%,
+        transparent 77%,
+        transparent
+      );
+    height: 100%;
+    background-size: var(--space-48) var(--space-48);
   }
 
   &::after {
-    background: linear-gradient(var(--black), var(--gray-900));
-    opacity: 0.9;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    opacity: 0.05;
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   }
 
   & > div {
     width: 100%;
   }
-`;
-
-export const StyledSVG = styled.svg`
-  position: absolute;
 `;

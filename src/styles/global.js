@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
   ${Typography}
   ${Spacing}
 
+  body {
+    background-color: var(--gray-900);
+  }
+
   ::selection {
     background: var(--gray-700);
   }
