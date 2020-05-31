@@ -81,7 +81,7 @@ const Typography = css`
 
   h6 {
     font-size: var(--text-16);
-    letter-spacing: -0.5px;
+    letter-spacing: 0.5px;
     @media (min-width: 768px) {
       font-size: var(--text-18);
     }

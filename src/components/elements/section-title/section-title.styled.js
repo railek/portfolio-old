@@ -6,7 +6,7 @@ export const StyledHeader = styled.h2`
   margin-bottom: var(--space-48);
   position: relative;
   color: var(--white);
-  padding-bottom: var(--space-16);
+  padding-bottom: var(--space-12);
 
   @media (min-width: 768px) {
     max-width: 26ch;
@@ -17,8 +17,8 @@ export const StyledHeader = styled.h2`
     content: '';
     display: block;
     width: var(--space-96);
-    height: var(--space-8);
-    background: var(--gray-500);
+    height: var(--space-6);
+    background: var(--primary-500);
     position: absolute;
     bottom: 0;
     left: 0;
