@@ -58,7 +58,7 @@ const StyledCard = styled.article`
 
 const StyledGrid = styled.div`
   display: grid;
-  gap: 48px;
+  gap: var(--space-16);
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
