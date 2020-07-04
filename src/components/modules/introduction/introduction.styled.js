@@ -2,8 +2,10 @@
 
 import styled from 'styled-components';
 
-export const StyledIntroduction = styled.div`
+export const StyledSection = styled.section`
   position: relative;
+  border-top: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--gray-800);
 `;
 
 export const StyledContent = styled.div`

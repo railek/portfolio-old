@@ -27,7 +27,7 @@ export default function Capabilities() {
   return (
     <StyledSection>
       <Wrapper>
-        <SectionTitle title="What I do" />
+        <SectionTitle title="What I do 👷‍♂️" />
         <StyledGrid>
           {capabilities.map((capability, index) => (
             <StyledCard key={index}>

@@ -5,7 +5,7 @@ import BackgroundImage from '@/components/elements/background-image';
 import SectionTitle from '@/components/elements/section-title';
 import Wrapper from '@/components/elements/wrapper';
 
-import { StyledContent, StyledIntroduction } from './introduction.styled';
+import { StyledContent, StyledSection } from './introduction.styled';
 
 export default function Introduction() {
   const data = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ export default function Introduction() {
     }
   `);
   return (
-    <StyledIntroduction>
+    <StyledSection>
       <BackgroundImage image={data.file.childImageSharp.fluid} alt="Jean Brock" />
       <Wrapper>
         <SectionTitle title="Introduction" />
@@ -45,6 +45,6 @@ export default function Introduction() {
           </p>
         </StyledContent>
       </Wrapper>
-    </StyledIntroduction>
+    </StyledSection>
   );
 }
