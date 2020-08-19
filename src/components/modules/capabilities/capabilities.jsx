@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ScrollFade from '@/components/elements/scroll-fade';
 import SectionTitle from '@/components/elements/section-title';
 import Wrapper from '@/components/elements/wrapper';
 
@@ -30,13 +31,17 @@ export default function Capabilities() {
         <SectionTitle title="What I do 👷‍♂️" />
         <StyledGrid>
           {capabilities.map((capability, index) => (
-            <StyledCard key={index}>
-              <StyledNumber>{capability.number}</StyledNumber>
-              <footer>
-                <h6>{capability.title}</h6>
-                <p>{capability.description}</p>
-              </footer>
-            </StyledCard>
+            <figure key={index}>
+              <ScrollFade threshold={0.2}>
+                <StyledCard>
+                  <StyledNumber>{capability.number}</StyledNumber>
+                  <footer>
+                    <h6>{capability.title}</h6>
+                    <p>{capability.description}</p>
+                  </footer>
+                </StyledCard>
+              </ScrollFade>
+            </figure>
           ))}
         </StyledGrid>
       </Wrapper>

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import ScrollFade from '@/components/elements/scroll-fade';
 import SectionTitle from '@/components/elements/section-title';
 import Wrapper from '@/components/elements/wrapper';
 import Layout from '@/components/layout';
@@ -108,7 +109,9 @@ const ProjectPage = () => {
         <StyledGrid>
           {projects.map(({ title, url, tags, excerpt }, index) => (
             <figure key={index}>
-              <Card title={title} url={url} tags={tags} excerpt={excerpt} />
+              <ScrollFade>
+                <Card title={title} url={url} tags={tags} excerpt={excerpt} />
+              </ScrollFade>
             </figure>
           ))}
         </StyledGrid>

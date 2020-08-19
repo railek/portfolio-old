@@ -16,6 +16,15 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
   },
   overrides: [
     {

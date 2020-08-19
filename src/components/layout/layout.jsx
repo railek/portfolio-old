@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
 import Footer from '@/components/modules/footer';
@@ -16,7 +17,9 @@ export default function Layout({ children }) {
         <Header />
         <div>
           <Navigation />
-          <main>{children}</main>
+          <motion.main exit={{ opacity: 0 }} initial="initial" animate="animate">
+            {children}
+          </motion.main>
           <Footer />
         </div>
       </StyledContainer>
