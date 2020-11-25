@@ -50,7 +50,8 @@ const StyledCard = styled.article`
   footer {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-12);
+    column-gap: var(--space-10);
+    row-gap: var(--space-4);
     font-size: var(--text-14);
     color: var(--gray-400);
     margin-top: var(--space-32);
