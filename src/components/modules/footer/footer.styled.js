@@ -14,6 +14,10 @@ export const StyledWrapper = styled.div`
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: var(--space-64);
+  }
+
+  @media (min-width: 1280px) {
     padding: var(--space-96);
   }
 `;
@@ -50,6 +54,10 @@ export const StyledBottom = styled.div`
   }
 
   @media (min-width: 1024px) {
+    padding: var(--space-24) var(--space-64);
+  }
+
+  @media (min-width: 1280px) {
     padding: var(--space-24) var(--space-96);
   }
 `;

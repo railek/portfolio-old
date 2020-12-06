@@ -14,6 +14,10 @@ export const StyledNavigation = styled.nav`
   }
 
   @media (min-width: 1024px) {
+    padding: var(--space-32) var(--space-64);
+  }
+
+  @media (min-width: 1280px) {
     padding: var(--space-32) var(--space-96);
   }
 

@@ -3,9 +3,11 @@ import React from 'react';
 import ScrollFade from '@/components/elements/scroll-fade';
 import Wrapper from '@/components/elements/wrapper';
 
+import { StyledHero } from './hero.styled';
+
 export default function Hero() {
   return (
-    <section>
+    <StyledHero>
       <Wrapper>
         <ScrollFade>
           <h1>
@@ -13,12 +15,16 @@ export default function Hero() {
             <br />
             developer experienced in
             <br />
-            building beautiful user
-            <br />
-            experiences.
+            building
+            {` `}
+            <span>
+              beautiful user
+              <br />
+              experiences.
+            </span>
           </h1>
         </ScrollFade>
       </Wrapper>
-    </section>
+    </StyledHero>
   );
 }

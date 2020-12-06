@@ -45,9 +45,9 @@ const Typography = css`
   }
 
   h1 {
-    font-size: var(--text-40);
+    font-size: var(--text-32);
     @media (min-width: 768px) {
-      font-size: var(--text-48);
+      font-size: var(--text-40);
     }
   }
 
