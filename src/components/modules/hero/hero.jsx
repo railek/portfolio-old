@@ -10,6 +10,7 @@ export default function Hero() {
     <StyledHero>
       <Wrapper>
         <ScrollFade>
+          <span>🇿🇦 Cape Town, South Africa</span>
           <h1>
             Multi-disciplinary frontend
             <br />
@@ -17,11 +18,11 @@ export default function Hero() {
             <br />
             building
             {` `}
-            <span>
+            <b>
               beautiful user
               <br />
               experiences.
-            </span>
+            </b>
           </h1>
         </ScrollFade>
       </Wrapper>
