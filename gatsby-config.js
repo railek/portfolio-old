@@ -51,8 +51,9 @@ module.exports = {
       },
     },
     'gatsby-plugin-mdx',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };

@@ -27,7 +27,7 @@ export default function Stack() {
                 <figure key={index}>
                   <StyledSubheading>{section.subheading}</StyledSubheading>
                   <ul>
-                    {section.list.map(item => (
+                    {section.list.map((item) => (
                       <li>
                         <IconListItem
                           name={item.name}
@@ -49,7 +49,7 @@ export default function Stack() {
                 <figure key={index}>
                   <StyledSubheading>{section.subheading}</StyledSubheading>
                   <ul>
-                    {section.list.map(item => (
+                    {section.list.map((item) => (
                       <li>
                         <IconListItem
                           name={item.name}

@@ -11,7 +11,7 @@ import Layout from '@/components/layout';
 import CallToAction from '@/components/modules/call-to-action';
 import useProjects from '@/hooks/useProjects';
 
-export const Bounce = {
+const Bounce = {
   transition: {
     duration: 0.1,
     ease: 'easeOut',

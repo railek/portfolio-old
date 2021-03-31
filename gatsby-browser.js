@@ -1,8 +1,6 @@
-import React from 'react';
-import { AnimatePresence } from 'framer-motion';
+const React = require('react');
+const { AnimatePresence } = require('framer-motion');
 
-const wrapPageElement = ({ element }) => (
+exports.wrapPageElement = ({ element }) => (
   <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
 );
-
-export default wrapPageElement;

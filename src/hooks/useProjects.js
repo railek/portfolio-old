@@ -16,7 +16,7 @@ export default function useProjects() {
       }
     }
   `);
-  return data.allMdx.nodes.map(project => ({
+  return data.allMdx.nodes.map((project) => ({
     id: project.id,
     title: project.frontmatter.title,
     excerpt: project.frontmatter.excerpt,

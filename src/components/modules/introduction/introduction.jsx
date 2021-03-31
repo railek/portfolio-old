@@ -1,7 +1,6 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import BackgroundImage from '@/components/elements/background-image';
 import ScrollFade from '@/components/elements/scroll-fade';
 import SectionTitle from '@/components/elements/section-title';
 import Wrapper from '@/components/elements/wrapper';
@@ -9,24 +8,19 @@ import Wrapper from '@/components/elements/wrapper';
 import { StyledContent, StyledSection } from './introduction.styled';
 
 export default function Introduction() {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "jean_brock.png" }) {
-        childImageSharp {
-          fluid {
-            base64
-            aspectRatio
-            src
-            srcSet
-            sizes
-          }
-        }
-      }
-    }
-  `);
   return (
     <StyledSection>
-      <BackgroundImage image={data.file.childImageSharp.fluid} alt="Jean Brock" />
+      <StaticImage
+        src="../../../images/jean_brock.png"
+        alt="Jean Brock"
+        placeholder="blurred"
+        layout="fullWidth"
+        style={{ position: 'absolute', inset: '0' }}
+        objectFit="cover"
+        objectPosition="left"
+        quality="100"
+        loading="eager"
+      />
       <Wrapper>
         <SectionTitle title="Introduction" />
         <ScrollFade>
