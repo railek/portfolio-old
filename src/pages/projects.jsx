@@ -1,15 +1,17 @@
 import React from 'react';
-import { IoLogoGithub, IoMdOpen } from 'react-icons/io';
+import { IoIosGlobe, IoLogoGithub, IoMdOpen } from 'react-icons/io';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import ScrollFade from '@/components/elements/scroll-fade';
 import SectionTitle from '@/components/elements/section-title';
+import Seo from '@/components/elements/seo';
 import Wrapper from '@/components/elements/wrapper';
 import Layout from '@/components/layout';
 import CallToAction from '@/components/modules/call-to-action';
 import useProjects from '@/hooks/useProjects';
+import useSiteMetadata from '@/hooks/useSiteMetadata';
 
 const Bounce = {
   transition: {
@@ -77,7 +79,7 @@ function Card({ title, url, tags, excerpt }) {
       <StyledCard as={motion.div} whileHover={Bounce}>
         <header>
           <div>
-            <IoLogoGithub />
+            {url.match(/github/gi) ? <IoLogoGithub /> : <IoIosGlobe />}
             <IoMdOpen />
           </div>
           <h5>{title}</h5>
@@ -102,23 +104,40 @@ Card.propTypes = {
 
 const ProjectPage = () => {
   const projects = useProjects();
+  const {
+    site: { siteMetadata },
+  } = useSiteMetadata();
 
   return (
-    <Layout title="Projects">
-      <Wrapper>
-        <SectionTitle title="Noteworthy Projects I've worked on" />
-        <StyledGrid>
-          {projects.map(({ title, url, tags, excerpt }, index) => (
-            <figure key={index}>
-              <ScrollFade>
-                <Card title={title} url={url} tags={tags} excerpt={excerpt} />
-              </ScrollFade>
-            </figure>
-          ))}
-        </StyledGrid>
-      </Wrapper>
-      <CallToAction />
-    </Layout>
+    <>
+      <Seo
+        title={siteMetadata.title}
+        description={siteMetadata.description}
+        keywords={siteMetadata.keywords}
+        url={siteMetadata.siteUrl}
+        ogImage={siteMetadata.ogImage}
+        favicon={siteMetadata.favicon}
+        lang={siteMetadata.lang}
+        type="website"
+        page="Projects"
+        path="/projects"
+      />
+      <Layout title="Projects">
+        <Wrapper>
+          <SectionTitle title="Noteworthy Projects I've worked on" />
+          <StyledGrid>
+            {projects.map(({ title, url, tags, excerpt }, index) => (
+              <figure key={index}>
+                <ScrollFade>
+                  <Card title={title} url={url} tags={tags} excerpt={excerpt} />
+                </ScrollFade>
+              </figure>
+            ))}
+          </StyledGrid>
+        </Wrapper>
+        <CallToAction />
+      </Layout>
+    </>
   );
 };
 
