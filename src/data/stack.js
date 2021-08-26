@@ -29,7 +29,7 @@ export const frontend = [
     ],
   },
   {
-    subheading: 'Frameworks',
+    subheading: 'Frameworks & Site Generators',
     list: [
       {
         name: 'React',
@@ -38,10 +38,45 @@ export const frontend = [
         icon: 'SiReact',
       },
       {
+        name: 'Vue',
+        description: 'Progressive JavaScript Framework',
+        link: 'https://vuejs.org/',
+        icon: 'SiVuedotjs',
+      },
+      {
+        name: 'Nuxt',
+        description: 'The Intuitive Vue Framework',
+        link: 'https://nuxtjs.org/',
+        icon: 'SiNuxtdotjs',
+      },
+      {
         name: 'Gatsby',
         description: 'Front-end Framework',
         link: 'https://www.gatsbyjs.com/',
         icon: 'SiGatsby',
+      },
+      {
+        name: 'Next',
+        description: 'React Framework',
+        link: 'https://nextjs.org/',
+        icon: 'SiNextdotjs',
+      },
+    ],
+  },
+  {
+    subheading: 'Testing',
+    list: [
+      {
+        name: 'Jest',
+        description: 'JavaScript testing framework',
+        link: 'https://jestjs.io/',
+        icon: 'SiJest',
+      },
+      {
+        name: 'Cypress',
+        description: 'JavaScript End-to-End Testing Framework',
+        link: 'https://www.cypress.io/',
+        icon: 'SiCypress',
       },
     ],
   },
@@ -59,6 +94,18 @@ export const frontend = [
         description: 'CSS Framework',
         link: 'https://tailwindcss.com/',
         icon: 'SiTailwindcss',
+      },
+      {
+        name: 'SASS',
+        description: 'Preprocessor scripting language',
+        link: 'https://sass-lang.com/',
+        icon: 'SiSass',
+      },
+      {
+        name: 'Styled Components',
+        description: 'CSS-in-JS library',
+        link: 'https://www.styled-components.com/',
+        icon: 'SiStyledcomponents',
       },
     ],
   },
@@ -108,10 +155,93 @@ export const frontend = [
         icon: 'SiBabel',
       },
       {
-        name: 'SASS',
-        description: 'Preprocessor scripting language',
-        link: 'https://sass-lang.com/',
-        icon: 'SiSass',
+        name: 'PostCSS',
+        description: 'Tool for transforming CSS',
+        link: 'https://postcss.org/',
+        icon: 'SiPostcss',
+      },
+    ],
+  },
+];
+
+export const backend = [
+  {
+    subheading: 'Languages',
+    list: [
+      {
+        name: 'Node.js',
+        description: 'JavaScript runtime',
+        link: 'https://nodejs.org/',
+        icon: 'SiNodedotjs',
+      },
+    ],
+  },
+  {
+    subheading: 'Frameworks',
+    list: [
+      {
+        name: 'Express',
+        description: 'Node.js web application framework',
+        link: 'https://expressjs.com/',
+        icon: 'SiExpress',
+      },
+    ],
+  },
+  {
+    subheading: 'Headless CMS',
+    list: [
+      {
+        name: 'Strapi',
+        description: 'Headless CMS',
+        link: 'https://strapi.io/',
+        icon: 'SiStrapi',
+      },
+      {
+        name: 'Sanity',
+        description: 'Headless CMS',
+        link: 'https://www.sanity.io/',
+        icon: 'SiSahibinden',
+      },
+      {
+        name: 'Storyblok',
+        description: 'Headless CMS',
+        link: 'https://www.storyblok.com',
+        icon: 'SiStoryblok',
+      },
+      {
+        name: 'Headless Magento',
+        description: 'Headless CMS',
+        link: 'https://business.adobe.com/products/magento/headless-commerce.html',
+        icon: 'SiMagento',
+      },
+    ],
+  },
+  {
+    subheading: 'Database',
+    list: [
+      {
+        name: 'PostgreSQL',
+        description: 'Relational database',
+        link: 'https://www.postgresql.org/',
+        icon: 'SiPostgresql',
+      },
+      {
+        name: 'MongoDB',
+        description: 'Document-oriented database',
+        link: 'https://www.mongodb.com/',
+        icon: 'SiMongodb',
+      },
+      {
+        name: 'MySQL',
+        description: 'Relational database',
+        link: 'https://www.mysql.com/',
+        icon: 'SiMysql',
+      },
+      {
+        name: 'SQLite',
+        description: 'Relational database',
+        link: 'https://www.sqlite.org/',
+        icon: 'SiSqlite',
       },
     ],
   },

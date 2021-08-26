@@ -10,6 +10,7 @@ export const StyledItem = styled.div`
   justify-content: center;
   color: var(--gray-300);
   margin-bottom: var(--space-16);
+  cursor: pointer;
 
   :last-of-type {
     margin-bottom: var(--space-0);
@@ -19,6 +20,12 @@ export const StyledItem = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  :hover {
+    strong {
+      text-decoration: underline;
+    }
   }
 
   strong {
