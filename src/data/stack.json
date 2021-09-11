@@ -1,0 +1,391 @@
+[
+  {
+    "id": 0,
+    "title": "Backend",
+    "content": [
+      {
+        "id": 0,
+        "subheading": "Languages",
+        "list": [
+          {
+            "id": 0,
+            "name": "Node.js",
+            "description": "JavaScript runtime",
+            "link": "https: //nodejs.org/",
+            "icon": "SiNodedotjs"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "subheading": "Frameworks",
+        "list": [
+          {
+            "id": 0,
+            "name": "Express",
+            "description": "Node.js web application framework",
+            "link": "https: //expressjs.com/",
+            "icon": "SiExpress"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subheading": "Headless CMS",
+        "list": [
+          {
+            "id": 0,
+            "name": "Strapi",
+            "description": "Headless CMS",
+            "link": "https: //strapi.io/",
+            "icon": "SiStrapi"
+          },
+          {
+            "id": 1,
+            "name": "Sanity",
+            "description": "Headless CMS",
+            "link": "https: //www.sanity.io/",
+            "icon": "SiSahibinden"
+          },
+          {
+            "id": 2,
+            "name": "Storyblok",
+            "description": "Headless CMS",
+            "link": "https: //www.storyblok.com",
+            "icon": "SiStoryblok"
+          },
+          {
+            "id": 3,
+            "name": "Headless Magento",
+            "description": "Headless CMS",
+            "link": "https: //business.adobe.com/products/magento/headless-commerce.html",
+            "icon": "SiMagento"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subheading": "Database",
+        "list": [
+          {
+            "id": 0,
+            "name": "PostgreSQL",
+            "description": "Relational database",
+            "link": "https: //www.postgresql.org/",
+            "icon": "SiPostgresql"
+          },
+          {
+            "id": 1,
+            "name": "MongoDB",
+            "description": "Document-oriented database",
+            "link": "https: //www.mongodb.com/",
+            "icon": "SiMongodb"
+          },
+          {
+            "id": 2,
+            "name": "MySQL",
+            "description": "Relational database",
+            "link": "https: //www.mysql.com/",
+            "icon": "SiMysql"
+          },
+          {
+            "id": 3,
+            "name": "SQLite",
+            "description": "Relational database",
+            "link": "https: //www.sqlite.org/",
+            "icon": "SiSqlite"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Frontend",
+    "content": [
+      {
+        "id": 0,
+        "subheading": "Languages",
+        "list": [
+          {
+            "id": 0,
+            "name": "Javascript",
+            "description": "Interpreted programming language",
+            "link": "https: //developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "icon": "SiJavascript"
+          },
+          {
+            "id": 1,
+            "name": "C#",
+            "description": "Object-oriented programming language",
+            "link": "https: //docs.microsoft.com/en-us/dotnet/csharp/",
+            "icon": "SiCsharp"
+          },
+          {
+            "id": 2,
+            "name": "HTML",
+            "description": "Hypertext Markup Language",
+            "link": "https: //developer.mozilla.org/en-US/docs/Web/HTML",
+            "icon": "SiJavascript"
+          },
+          {
+            "id": 3,
+            "name": "CSS",
+            "description": "Stylesheet Language",
+            "link": "https: //developer.mozilla.org/en-US/docs/Web/CSS",
+            "icon": "SiCss3"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "subheading": "Frameworks & Site Generators",
+        "list": [
+          {
+            "id": 0,
+            "name": "React",
+            "description": "Front-end JavaScript library",
+            "link": "https: //reactjs.org/",
+            "icon": "SiReact"
+          },
+          {
+            "id": 1,
+            "name": "Vue",
+            "description": "Progressive JavaScript Framework",
+            "link": "https: //vuejs.org/",
+            "icon": "SiVuedotjs"
+          },
+          {
+            "id": 2,
+            "name": "Nuxt",
+            "description": "The Intuitive Vue Framework",
+            "link": "https: //nuxtjs.org/",
+            "icon": "SiNuxtdotjs"
+          },
+          {
+            "id": 3,
+            "name": "Gatsby",
+            "description": "Front-end Framework",
+            "link": "https: //www.gatsbyjs.com/",
+            "icon": "SiGatsby"
+          },
+          {
+            "id": 4,
+            "name": "Next",
+            "description": "React Framework",
+            "link": "https: //nextjs.org/",
+            "icon": "SiNextdotjs"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subheading": "Testing",
+        "list": [
+          {
+            "id": 0,
+            "name": "Jest",
+            "description": "JavaScript testing framework",
+            "link": "https: //jestjs.io/",
+            "icon": "SiJest"
+          },
+          {
+            "id": 1,
+            "name": "Cypress",
+            "description": "JavaScript End-to-End Testing Framework",
+            "link": "https: //www.cypress.io/",
+            "icon": "SiCypress"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subheading": "Styling",
+        "list": [
+          {
+            "id": 0,
+            "name": "Bootstrap",
+            "description": "CSS Framework",
+            "link": "https: //getbootstrap.com/",
+            "icon": "SiBootstrap"
+          },
+          {
+            "id": 1,
+            "name": "Tailwind",
+            "description": "CSS Framework",
+            "link": "https: //tailwindcss.com/",
+            "icon": "SiTailwindcss"
+          },
+          {
+            "id": 1,
+            "name": "SASS",
+            "description": "Preprocessor scripting language",
+            "link": "https: //sass-lang.com/",
+            "icon": "SiSass"
+          },
+          {
+            "id": 2,
+            "name": "Styled Components",
+            "description": "CSS-in-JS library",
+            "link": "https: //www.styled-components.com/",
+            "icon": "SiStyledcomponents"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "subheading": "Build Tools",
+        "list": [
+          {
+            "id": 0,
+            "name": "NPM",
+            "description": "Package manager",
+            "link": "https: //www.npmjs.com/",
+            "icon": "SiNpm"
+          },
+          {
+            "id": 1,
+            "name": "Yarn",
+            "description": "Package manager",
+            "link": "https: //yarnpkg.com/",
+            "icon": "SiYarn"
+          },
+          {
+            "id": 2,
+            "name": "Webpack",
+            "description": "Module bundler",
+            "link": "https: //webpack.js.org/",
+            "icon": "SiWebpack"
+          },
+          {
+            "id": 3,
+            "name": "Gulp",
+            "description": "Task runner",
+            "link": "https: //gulpjs.com/",
+            "icon": "SiGulp"
+          },
+          {
+            "id": 4,
+            "name": "EsLint",
+            "description": "Code analysis tool",
+            "link": "https: //eslint.org/",
+            "icon": "SiEslint"
+          },
+          {
+            "id": 5,
+            "name": "Prettier",
+            "description": "Opinionated code formatter",
+            "link": "https: //prettier.io/",
+            "icon": "SiPrettier"
+          },
+          {
+            "id": 6,
+            "name": "Babel",
+            "description": "JavaScript transcompiler",
+            "link": "https: //babeljs.io/",
+            "icon": "SiBabel"
+          },
+          {
+            "id": 7,
+            "name": "PostCSS",
+            "description": "Tool for transforming CSS",
+            "link": "https: //postcss.org/",
+            "icon": "SiPostcss"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Design",
+    "content": [
+      {
+        "id": 0,
+        "subheading": "UI/UX",
+        "list": [
+          {
+            "id": 0,
+            "name": "Figma",
+            "description": "Vector graphics editor and prototyping tool",
+            "link": "https: //www.figma.com/",
+            "icon": "SiFigma"
+          },
+          {
+            "id": 1,
+            "name": "XD",
+            "description": "Vector-based user experience design tool",
+            "link": "https: //www.adobe.com/products/xd.html",
+            "icon": "SiAdobexd"
+          },
+          {
+            "id": 2,
+            "name": "Sketch",
+            "description": "UI/UX product design tool",
+            "link": "https: //www.sketch.com/",
+            "icon": "SiSketch"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "subheading": "Raster",
+        "list": [
+          {
+            "id": 0,
+            "name": "Photoshop",
+            "description": "Raster graphics editor",
+            "link": "https: //www.adobe.com/products/photoshop.html",
+            "icon": "SiAdobephotoshop"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subheading": "Game Development",
+        "list": [
+          {
+            "id": 0,
+            "name": "Unity",
+            "description": "Cross-platform game engine",
+            "link": "https: //unity.com/",
+            "icon": "SiUnity"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subheading": "Vector",
+        "list": [
+          {
+            "id": 0,
+            "name": "Illustrator",
+            "description": "Vector graphics editor",
+            "link": "https: //www.adobe.com/products/illustrator.html",
+            "icon": "SiAdobeillustrator"
+          },
+          {
+            "id": 1,
+            "name": "Affinity Designer",
+            "description": "Vector graphics editor",
+            "link": "https: //affinity.serif.com/",
+            "icon": "SiAffinity"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "subheading": "3D",
+        "list": [
+          {
+            "id": 0,
+            "name": "Blender",
+            "description": "3D Creation Suite",
+            "link": "https: //www.blender.org/",
+            "icon": "SiBlender"
+          }
+        ]
+      }
+    ]
+  }
+]

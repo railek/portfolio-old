@@ -1,144 +1,18 @@
 import React from 'react';
-import { IoIosGlobe, IoLogoGithub, IoMdOpen } from 'react-icons/io';
-import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-import ScrollFade from '@/components/elements/scroll-fade';
-import SectionTitle from '@/components/elements/section-title';
 import Seo from '@/components/elements/seo';
-import Wrapper from '@/components/elements/wrapper';
 import Layout from '@/components/layout';
 import CallToAction from '@/components/modules/call-to-action';
-import useProjects from '@/hooks/useProjects';
-import useSiteMetadata from '@/hooks/useSiteMetadata';
+import ProjectGrid from '@/components/modules/project-grid';
 
-const Bounce = {
-  transition: {
-    duration: 0.1,
-    ease: 'easeOut',
-  },
-  translateY: -4,
-};
-
-const StyledCard = styled.article`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--gray-800);
-  border: 1px solid var(--gray-700);
-  padding: var(--space-24);
-
-  @media (min-width: 768px) {
-    min-height: 256px;
-  }
-
-  h5 {
-    color: var(--gray-50);
-    margin-bottom: var(--space-8);
-  }
-
-  header > div {
-    display: flex;
-    justify-content: space-between;
-
-    svg {
-      font-size: var(--text-24);
-      color: var(--gray-400);
-      margin-bottom: var(--space-32);
-    }
-  }
-
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: var(--space-10);
-    row-gap: var(--space-4);
-    font-size: var(--text-14);
-    color: var(--gray-400);
-    margin-top: var(--space-32);
-  }
-`;
-
-const StyledGrid = styled.div`
-  display: grid;
-  gap: var(--space-16);
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-`;
-
-function Card({ title, url, tags, excerpt }) {
-  return (
-    <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-      <StyledCard as={motion.div} whileHover={Bounce}>
-        <header>
-          <div>
-            {url.match(/github/gi) ? <IoLogoGithub /> : <IoIosGlobe />}
-            <IoMdOpen />
-          </div>
-          <h5>{title}</h5>
-          <p>{excerpt}</p>
-        </header>
-        <footer>
-          {tags.map((tag, index) => (
-            <span key={index}>{tag}</span>
-          ))}
-        </footer>
-      </StyledCard>
-    </a>
-  );
-}
-
-Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-};
-
-const ProjectPage = () => {
-  const projects = useProjects();
-  const {
-    site: { siteMetadata },
-  } = useSiteMetadata();
-
-  return (
-    <>
-      <Seo
-        title={siteMetadata.title}
-        description={siteMetadata.description}
-        keywords={siteMetadata.keywords}
-        url={siteMetadata.siteUrl}
-        ogImage={siteMetadata.ogImage}
-        favicon={siteMetadata.favicon}
-        lang={siteMetadata.lang}
-        type="website"
-        page="Projects"
-        path="/projects"
-      />
-      <Layout title="Projects">
-        <Wrapper>
-          <SectionTitle title="Noteworthy Projects I've worked on" />
-          <StyledGrid>
-            {projects.map(({ title, url, tags, excerpt }, index) => (
-              <figure key={index}>
-                <ScrollFade>
-                  <Card title={title} url={url} tags={tags} excerpt={excerpt} />
-                </ScrollFade>
-              </figure>
-            ))}
-          </StyledGrid>
-        </Wrapper>
-        <CallToAction />
-      </Layout>
-    </>
-  );
-};
+const ProjectPage = () => (
+  <>
+    <Seo page="Projects" path="/projects" />
+    <Layout>
+      <ProjectGrid />
+      <CallToAction />
+    </Layout>
+  </>
+);
 
 export default ProjectPage;

@@ -1,10 +1,15 @@
-const path = require('path');
-const fs = require('fs');
-
 module.exports = {
   root: true,
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'airbnb', 'airbnb/hooks', 'prettier'],
-  plugins: ['prettier', 'simple-import-sort', , 'import'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'prettier',
+  ],
+  plugins: ['react', 'prettier', 'import', 'simple-import-sort', 'jsx-a11y'],
   env: {
     browser: true,
     es6: true,
@@ -14,17 +19,15 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-underscore-dangle': 'off',
     'react/no-array-index-key': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    "react/jsx-filename-extension": [
+    'react/jsx-filename-extension': [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ]
+        extensions: ['.js', '.jsx'],
+      },
+    ],
   },
   overrides: [
     {
@@ -55,9 +58,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['@', './src/'],
-        ],
+        map: [['@', './src/']],
         extensions: ['.js', '.jsx'],
       },
     },

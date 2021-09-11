@@ -7,6 +7,10 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+
   header {
     display: flex;
     flex-direction: column;

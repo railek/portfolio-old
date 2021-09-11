@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import Color from './color';
+import Keyframes from './keyframes';
 import Reset from './reset';
 import Spacing from './spacing';
 import Typography from './typography';
@@ -10,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   ${Color}
   ${Typography}
   ${Spacing}
+  ${Keyframes}
 
   body {
     background-color: var(--gray-900);

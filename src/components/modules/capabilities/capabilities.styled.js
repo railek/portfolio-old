@@ -20,7 +20,7 @@ export const StyledGrid = styled.div`
 `;
 
 export const StyledNumber = styled.span`
-  font-size: 48px;
+  font-size: var(--text-48);
   line-height: 100%;
   font-weight: 700;
 `;

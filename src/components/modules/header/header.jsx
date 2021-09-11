@@ -8,7 +8,11 @@ import { StyledHeader } from './header.styled';
 
 const Header = () => {
   const node = useRef();
-  const links = ['About', 'Projects'];
+  const links = [
+    { label: 'Home', slug: '/' },
+    { label: 'About', slug: '/about' },
+    { label: 'Projects', slug: '/projects' },
+  ];
 
   return (
     <StyledHeader>
@@ -19,7 +23,18 @@ const Header = () => {
       <ul>
         {links.map((link, index) => (
           <li key={index}>
-            <Link to={`/${link.toLowerCase()}`}>{link}</Link>
+            <Link
+              activeStyle={{
+                color: 'var(--gray-50)',
+                textDecoration: 'underline',
+                textDecorationThickness: 'var(--space-2)',
+                textUnderlineOffset: 'var(--space-8)',
+                textDecorationColor: 'var(--primary-500)',
+              }}
+              to={link.slug}
+            >
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>

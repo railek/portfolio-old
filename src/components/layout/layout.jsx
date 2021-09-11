@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Footer from '@/components/modules/footer';
 import Header from '@/components/modules/header';
 import Navigation from '@/components/modules/navigation';
-import GlobalStyles from '@/styles/global';
+import GlobalStyles from '@/styles';
 
 import { StyledContainer } from './layout.styled';
 

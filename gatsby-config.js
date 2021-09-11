@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Railek',
     description: 'Multi-disciplinary frontend developer based in South Africa.',
-    keywords: ['React', 'Gatsby', 'JavaScript'],
+    keywords: ['React', 'Gatsby', 'JavaScript', 'Cape Town'],
     ogImage: 'images/open-graph.png',
     author: '@rail3k',
     lang: 'en',
@@ -28,14 +28,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Bungee', 'Open Sans:400,500,700,900'],
-        },
-      },
-    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

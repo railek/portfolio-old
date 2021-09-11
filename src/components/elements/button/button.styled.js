@@ -19,6 +19,5 @@ export const StyledButton = styled.button`
 
   @media (min-width: 768px) {
     width: auto;
-    margin-top: var(--space-48);
   }
 `;
