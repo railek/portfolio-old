@@ -22,7 +22,7 @@ export default function Stack() {
         <Masonry gutter="var(--space-16)">
           {data.map((level) => (
             <div key={level.id}>
-              <ScrollFade threshold={0.2}>
+              <ScrollFade threshold={0}>
                 <StyledCard>
                   <h4>{level.title}</h4>
                   {level.content.map((section) => (
