@@ -15,7 +15,7 @@ export default function Capabilities() {
     },
     {
       number: '02',
-      title: 'design',
+      title: 'Design',
       description: 'Design Systems, UI, Figma, Adobe Suite',
     },
     {
@@ -32,11 +32,11 @@ export default function Capabilities() {
         <StyledGrid>
           {capabilities.map((capability, index) => (
             <figure key={index}>
-              <ScrollFade threshold={0.2}>
+              <ScrollFade threshold={0}>
                 <StyledCard>
                   <StyledNumber>{capability.number}</StyledNumber>
                   <footer>
-                    <h6>{capability.title}</h6>
+                    <span>{capability.title}</span>
                     <p>{capability.description}</p>
                   </footer>
                 </StyledCard>

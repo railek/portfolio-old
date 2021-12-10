@@ -18,7 +18,7 @@ const Bounce = {
 export default function ProjectCard({ title, url, tags, excerpt }) {
   return (
     <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-      <ScrollFade threshold={0.1}>
+      <ScrollFade threshold={0}>
         <StyledCard as={motion.div} whileHover={Bounce}>
           <header>
             <div>

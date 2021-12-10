@@ -28,6 +28,12 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledColumn = styled.div`
+  span {
+    color: var(--gray-50);
+    font-size: var(--text-18);
+    font-weight: 700;
+  }
+
   li {
     margin-top: var(--space-12);
     color: var(--gray-400);

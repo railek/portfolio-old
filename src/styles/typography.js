@@ -22,6 +22,7 @@ const Typography = css`
     font-style: normal;
     color: var(--gray-200);
     font-size: var(--text-16);
+    font-display: swap;
   }
 
   p {

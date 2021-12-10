@@ -40,7 +40,13 @@ export const StyledCard = styled.figure`
 
   footer {
     display: flex;
-    gap: var(--space-8);
+    gap: var(--space-2);
     flex-direction: column;
+
+    span {
+      color: var(--gray-50);
+      font-size: var(--text-20);
+      font-weight: 700;
+    }
   }
 `;

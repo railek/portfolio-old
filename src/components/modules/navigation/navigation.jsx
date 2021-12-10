@@ -12,7 +12,7 @@ const Navigation = () => {
 
   return (
     <StyledNavigation>
-      <h6>Jean Alexander Brock</h6>
+      <strong>Jean Alexander Brock</strong>
       <ul>
         {links.map((link, index) => (
           <li key={index}>

@@ -9,7 +9,7 @@ import { StyledContent, StyledGrid, StyledImage, StyledSection } from './introdu
 export default function Introduction() {
   return (
     <StyledSection>
-      <ScrollFade>
+      <ScrollFade threshold={0}>
         <StyledGrid>
           <Wrapper>
             <StyledContent>

@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <StyledHero>
       <Wrapper>
-        <ScrollFade>
+        <ScrollFade threshold={0}>
           <span>🇿🇦 Cape Town, South Africa</span>
           <h1>
             Multi-disciplinary frontend

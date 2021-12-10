@@ -13,7 +13,7 @@ const Footer = () => {
       <StyledFooter>
         <StyledWrapper>
           <StyledColumn>
-            <h6>Navigation</h6>
+            <span>Navigation</span>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
           </StyledColumn>
 
           <StyledColumn>
-            <h6>Information</h6>
+            <span>Information</span>
             <ul>
               <li>
                 <a data-title="Privacy Policy" href="https://policies.google.com/privacy">
@@ -43,7 +43,7 @@ const Footer = () => {
           </StyledColumn>
 
           <StyledColumn>
-            <h6>Contact</h6>
+            <span>Contact</span>
             <ul>
               <li>
                 <a href="mailto:jean@railek.com">jean@railek.com</a>

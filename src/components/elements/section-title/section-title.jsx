@@ -7,7 +7,7 @@ import { StyledHeader } from './section-title.styled';
 
 export default function SectionTitle({ title }) {
   return (
-    <ScrollFade>
+    <ScrollFade threshold={0}>
       <StyledHeader>{title}</StyledHeader>
     </ScrollFade>
   );

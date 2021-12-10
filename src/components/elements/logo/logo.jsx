@@ -1,13 +1,21 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import favicon from '@/images/favicon.png';
-
-import { StyledImage } from './logo.styled';
+import { StyledLogo } from './logo.styled';
 
 const Logo = () => (
   <Link to="/">
-    <StyledImage src={favicon} alt="Railek Logo" />
+    <StyledLogo>
+      <StaticImage
+        src="../../../images/favicon.png"
+        alt="Railek Logo"
+        placeholder="blurred"
+        layout="fixed"
+        width={32}
+        height={32}
+      />
+    </StyledLogo>
   </Link>
 );
 

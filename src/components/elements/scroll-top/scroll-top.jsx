@@ -9,7 +9,7 @@ const ScrollTop = () => {
   };
 
   return (
-    <StyledButton onClick={handleClick} type="button">
+    <StyledButton onClick={handleClick} type="button" aria-label="Scroll to top">
       <IoIosArrowUp />
     </StyledButton>
   );

@@ -2,8 +2,7 @@
 
 import styled from 'styled-components';
 
-export const StyledImage = styled.img`
-  width: var(--space-32);
+export const StyledLogo = styled.div`
   transition: transform 0.2s ease-in-out;
 
   :hover {
