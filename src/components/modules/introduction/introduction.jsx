@@ -13,9 +13,7 @@ export default function Introduction() {
         <StyledGrid>
           <Wrapper>
             <StyledContent>
-              <p>
-                <b>Hey, I&apos;m Jean Brock 👋</b>
-              </p>
+              <h1>Hey, I&apos;m Jean 👋</h1>
               <p>
                 I`m a developer who also designs, with a strong interest in web technology and video
                 games.

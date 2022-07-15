@@ -3,14 +3,14 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.h2`
-  margin-bottom: var(--space-48);
+  margin-bottom: var(--space-32);
   position: relative;
   color: var(--white);
   padding-bottom: var(--space-12);
 
   @media (min-width: 768px) {
     max-width: 26ch;
-    margin-bottom: var(--space-64);
+    margin-bottom: var(--space-40);
   }
 
   &::after {

@@ -10,7 +10,7 @@ export const StyledSection = styled.section`
 export const StyledGrid = styled.div`
   display: grid;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1280px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 `;
@@ -20,13 +20,17 @@ export const StyledImage = styled.div`
   position: relative;
   border-left: 1px solid var(--gray-800);
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1280px) {
     height: auto;
   }
 `;
 
 export const StyledContent = styled.div`
   position: relative;
+
+  h1 {
+    margin-bottom: var(--space-32);
+  }
 
   p {
     max-width: 64ch;
