@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
+import Analytics from '@/components/elements/analytics';
 import Footer from '@/components/modules/footer';
 import Header from '@/components/modules/header';
 import Navigation from '@/components/modules/navigation';
@@ -23,6 +24,7 @@ export default function Layout({ children }) {
           <Footer />
         </div>
       </StyledContainer>
+      <Analytics />
     </>
   );
 }
